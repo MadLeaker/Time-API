@@ -9,4 +9,4 @@ expressObj.get("/date",function(req,res){
             hourMin: now.format("HH:MM")
         }
         res.send(json)
-}).listen(555)
+}).listen(process.env.PORT || 8080)
